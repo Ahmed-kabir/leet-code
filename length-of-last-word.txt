@@ -1,0 +1,11 @@
+class Solution {
+
+    /**
+     * @param String $s
+     * @return Integer
+     */
+    function lengthOfLastWord($s) {
+        $arrays = explode(" ", trim($s));
+        return strlen($arrays[count($arrays) - 1]);
+    }
+}
